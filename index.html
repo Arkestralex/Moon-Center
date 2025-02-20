@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+        body {
+            background: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem 2rem;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+        header .logo h1{
+            margin: 0;
+            color: #e0e0e0;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 1rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+        .banner {
+            background-image: url('Banner1.gif');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 125px;
+            pointer-events: none;
+            user-select: none;
+        }
+        .link-style {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .link-style:hover {
+            color: #9e6a15;
+            text-decoration: underline;
+        }
+        .latest-releases {
+            background-color: #212224e3;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .latest-releases h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .release-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .release-card {
+            background-color: #21222b;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+        .release-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .release-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .release-card p {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+        .release-card .more-info {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .release-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid #333;
+        }
+        footer p {
+            margin: 0;
+            color: #757575;
+        }
+    </style>
+    <title>Moon Center</title>
+    <head>
+        <link rel="icon" type="image" sizes="16x16" href="favicon-16x16.png">
+        <link rel="icon2" type="image" sizes="32x32" href="favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <div class="logo">
+            <h1>Moon Center</h1>
+        </div>
+    </head>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="MC.Search.html">Novedades</a></li>
+                <li><a href="music.html">Soundtracks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="banner"></div>
+        <img src="MoonCenter.png" alt="Moon Center.png" width="35%" style="display: block; margin: auto" onmousedown="return false" draggable="false" oncontextmenu="return false">
+        <h3><em style="color: #FFD700;">Moon Center</em> es una página web diseñada para los fanáticos del anime, manga y videojuegos, ofreciendo información confiable, actualizaciones y análisis en profundidad sobre estas temáticas.
+            El proyecto buscará destacar por su precisión, organización y diseño visual atractivo que priorice la experiencia del usuario.
+            <br>
+            La misión de <em style="color: #FFD700;">Moon Center</em> será conectar la comunidad otaku y gamer con contenido detallado y bien investigado, abarcando desde lanzamientos recientes hasta clásicos. La página podría incluir secciones como noticias, reseñas, guías, y un espacio dedicado a recomendaciones, buscando convertirse en un recurso esencial para los aficionados.
+        </h3>
+        <section id="latest-releases" class="latest-releases" >
+            <em><h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Últimas noticias</h2></em>
+            <div class="release-container" id="release-container"></div>
+        </section>
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bienvenido a Moon Center</h1>
+        <h3>
+            Tu espacio dedicado a este mundo. Aquí encontrarás información cuidadosamente organizada sobre tus franquicias favoritas, incluyendo reseñas, análisis, datos curiosos y las últimas novedades de la industria.
+            <br>
+            <br>
+            <em style="color: #FFD700;">En este sitio nos esforzamos para ofrecerte:</em>
+            <br>
+            •Fichas detalladas de personajes, series y juegos.<br>
+            •Noticias actualizadas sobre lanzamientos, eventos y tendencias.<br>
+            •Artículos reflexivos que exploran temas profundos detrás de las historias.<br>
+            •Un diseño intuitivo y cómodo, pensado para que disfrutes cada visita.<br>
+        </h3>
+
+        <! -- sección de contactos -->
+        <br>
+        <section id="contactos">
+            <h3 style="color:azure; display: block; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contactos: </h3>
+            <em><a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X" class="link-style">¡El Rincón de Aki!</a></em>
+            <br>
+            <em><a href="mailto:superlemes144@gmail.com?subject=Pregunta%20sobre%20la%20página." class="link-style">Correo Electrónico</a></em>
+            <br>
+            <em><a href="https://www.youtube.com/@Walter_ex" class="link-style">Walterex Channel</a></em>
+        </section>
+        <br>
+        <br>
+        <em><a href="Acerca de.html" class="link-style">Acerca de la página</a></em>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2024-2025 Moon Center, All rights reserved.</p>
+            <p>Developed by Walterex©</p>
+        </footer>
+    </body>
+    <script>
+        const releases = [
+        {
+            type: "Noticia1",
+            title: "¡Nueva sección de Soundtracks!", 
+            image: "music.jpg",
+            description: "¡Descubre la nueva sección de música!",
+            link: "music.html"
+        },
+        {
+            type: "Noticia2",
+            title: "Nueva actualización",
+            image: "parche.jpg",
+            description: "¡Lee los detalles de la nueva actualización!",
+            link: "newparch.html"
+        },
+        {
+            type: "Noticia3",
+            title: "Ya leíste el nuevo artículo?",
+            image: "artículo 4.jpg",
+            description: "¡La Biografía de Walter está disponible!",
+            link: "articulo4.html"
+        }
+        ];
+
+        const releaseContainer = document.getElementById("release-container");
+
+        releases.forEach(release => {
+        const card = document.createElement("div");
+        card.classList.add("release-card");
+        card.innerHTML = `
+        <img src="${release.image}" alt="Portada de ${release.type}" onmousedown="return false" draggable="false" oncontextmenu="return false">
+        <h3>${release.title}</h3>
+        <em><p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">${release.description}</p></em>
+        <em><a href="${release.link}" class="link-style" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></em>
+        `;
+        releaseContainer.appendChild(card);
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href=');
+                if (href.startsWish('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    };
+                };
+            });
+        });
+    </script>
+</html>

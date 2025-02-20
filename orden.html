@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <body>
+        <div id="lista">
+            <a href=""><p>Higurashi</p></a>
+            <a href=""><p>Nana</p></a>
+            <a href=""><p>Golden Time</p></a>
+            <a href=""><p>Fate</p></a>
+            <a href=""><p>Dragon ball</p></a>
+        </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        let div = document.getElementById("lista");
+        let items = Array.from(div.getElementsByTagName("a"));
+
+        items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+        div.innerHTML = "";
+        items.forEach(item => div.appendChild(item));
+        });
+    </script>
+    </body>
+</html>
