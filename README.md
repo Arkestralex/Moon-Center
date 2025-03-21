@@ -12,7 +12,7 @@ Moon Center está en constante desarrollo. Actualmente, hemos integrado una secc
 
 🔗 Enlaces
 Sitio Web: Enlace al sitio (https://arkestralex.github.io/Moon-Center/)
-YouTube: Moon Center en YouTube (https://www.youtube.com/@Walter_ex)
+YouTube: Walterex en YouTube (https://www.youtube.com/@Walter_ex)
 WhatsApp: Comunidad en WhatsApp (https://www.whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X)
 📬 Contacto: projectmooncenter@gmail.com
 Si tienes sugerencias o quieres colaborar, no dudes en contactarme.
