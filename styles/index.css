@@ -15,6 +15,23 @@
             margin: 0;
             color: #e0e0e0;
         }
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
         .nav-links {
             list-style: none;
             display: flex;
