@@ -26,6 +26,7 @@ p {
     opacity: 0;
     transform: translateY(5px);
     animation: fadeIn 1s ease-out forwards;
+    animation-delay: 2s;
 }
   
 @keyframes fadeIn {
