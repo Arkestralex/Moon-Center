@@ -70,10 +70,10 @@
         const releases = [
         {
             type: "Noticia1",
-            title: "¡Nueva sección de Soundtracks!", 
-            image: "music.jpg",
-            description: "¡Descubre la nueva sección de música!",
-            link: "music.html"
+            title: "¡Nueva sección de Mangas!", 
+            image: "images/mirai-nikki-image.webp",
+            description: "¡Descubre la nueva sección de Mangas!",
+            link: "mangas.html"
         },
         {
             type: "Noticia2",
@@ -84,10 +84,10 @@
         },
         {
             type: "Noticia3",
-            title: "Conoces el equipo AntiRain?",
-            image: "images/AntiRain.jpg",
-            description: "¡El artículo 5 ya está disponible!",
-            link: "articulo5.html"
+            title: "Rika Furude: Un ejemplo de valor y determinación",
+            image: "images/RikaFurudeA.png",
+            description: "¡El artículo 6 ya está disponible!",
+            link: "artículo6.html"
         }
         ];
 
@@ -103,21 +103,6 @@
         <em><a href="${release.link}" class="link-style" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></em>
         `;
         releaseContainer.appendChild(card);
-        });
-
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href=');
-                if (href.startsWish('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    };
-                };
-            });
         });
     </script>
 </html>
