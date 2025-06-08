@@ -1,33 +1,45 @@
 body {
-            background: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-        }
-        footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 1rem 0;
-            border-top: 1px solid #333;
-        }
-        footer p {
-            margin: 0;
-            color: #757575;
-        }
-        header {
-            background-color: #1f1f1f;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #333;
-        }
-        header .logo h1{
-            margin: 0;
-            color: #e0e0e0;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            width: 40%;
-            border-radius: 10%;
-        }
+    background: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+    color: #757575;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header .logo h1{
+    margin: 0;
+    color: #e0e0e0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 10%;
+}
+.icono-personal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 8px;
+}
