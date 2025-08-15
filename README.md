@@ -16,3 +16,4 @@ YouTube: Walterex en YouTube (https://www.youtube.com/@Walter_ex)
 WhatsApp: Comunidad en WhatsApp (https://www.whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X)
 📬 Contacto: projectmooncenter@gmail.com
 Si tienes sugerencias o quieres colaborar, no dudes en contactarme.
+Recuerda que la mejor forma de colaborar es corriendo la voz!
