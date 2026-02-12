@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "Bienvenido a Moon Center",
+      "description": "La app Linux llegó antes que la web 🚀",
+      "url": "https://github.com/",
+      "tag": "Anuncio"
+    },
+    {
+      "title": "Proyecto Evangelion",
+      "description": "Nuevo proyecto añadido al hub.",
+      "url": "https://github.com/",
+      "tag": "Proyecto"
+    }
+  ]
+}
