@@ -9,83 +9,257 @@
         <link rel="stylesheet" href="styles/News.css">
     </head>
     <style>
-        footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 1rem 0;
-            border-top: 1px solid #333;
-        }
-        footer p {
-            margin: 0;
-            color: #757575;
-        }
+        section:nth-child(1) { animation-delay: 0s; }
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
     </style>
     <body>
         <header>
-            <h1>Novedades Moon Center</h1>
-            <br>
+            <h1>🌙 Novedades Moon Center</h1>
             <nav class="search-menu">
                 <ul>
                     <li><a href="#noticias">Noticias</a></li>
                     <li><a href="#articulos">Artículos</a></li>
                     <li><a href="#anime">Anime</a></li>
                     <li><a href="#mangas">Mangas</a></li>
+                    <li><a href="#fanarts">Fanarts</a></li>
                     <li><a href="#juegos">Videojuegos</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
+            <!-- NOTICIAS -->
             <section id="noticias">
-                <h2 style="color: #FFD700;">Noticias</h2>
-                <em><p class="titlep">¡Las mejores noticias sobre el proyecto!</p></em><br>
-                <p>¡Nuevo parche 1.3.3! Lee los detalles.</p>
-                <a href="newparch.html"><img src="parche.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>Nueva Sección de música ya disponible!</p>
-                <a href="music.html"><img src="music.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>El rincón de Aki ya está disponible para que puedas visualizar todo el contenido relevante sobre el proyecto!</p>
-                <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X"><img src="aki.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
+                <h2><span class="section-icon">📢</span>Noticias</h2>
+                <p class="section-subtitle">Las mejores noticias sobre el proyecto</p>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/parche.jpg" alt="Parche 1.4" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Nuevo</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">¡Nuevo Parche 1.4!</div>
+                            <p class="card-description">Lee todos los detalles de los cambios, mejoras y fixes incluidos en esta nueva versión.</p>
+                            <a href="newparch.html" class="card-link">Leer completo →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="music.jpg" alt="Sección Música" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Popular</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Sección de Música</div>
+                            <p class="card-description">Nueva sección de soundtracks y música disponible. Descubre los mejores OST de tus Animes favoritos.</p>
+                            <a href="music.html" class="card-link">Explorar →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="aki.jpg" alt="El Rincón de Aki" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Comunidad</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">¡El Rincón de Aki!</div>
+                            <p class="card-description">Nuevo canal de WhatsApp para visualizar todo el contenido relevante. Únete a nuestra comunidad.</p>
+                            <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X" class="card-link">Únirse →</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <!-- ARTÍCULOS -->
             <section id="articulos">
-                <h2 style="color: #FFD700;">Artículos</h2>
-                <p><em>Conocías estos generos de Anime?</em></p>
-                <a href="artículo7.html"><img src="images/Article7.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p><em>La eternidad no es bondad: </em>Una reflexión desde la mirada de Rika Furude</p>
-                <a href="artículo6.html"><img src="images/RikaFurudeA.png" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p><em>AntiRain</em> el nuevo proyecto de Moon Center.</p>
-                <a href="articulo5.html"><img src="images/AntiRain.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>Bíografía de Walterex, el desarrollador de <em>Moon Center.</em></p>
-                <a href="articulo4.html"><img src="artículo 4.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>La importancia de una audiencia (Una reflexión sobre el desarrollo en conjunto).</p>
-                <a href="articulo3.html"><img src="7382f266e07748fa8ad85ba71781266d.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>Curiosidades sobre la página de Moon Center.</p>
-                <a href="articulo2.html"><img src="9bbf0129918ba266075c98e4d0098531.jpg" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
-                <p>Proyectos y cosas a agregar en Moon Center.</p>
-                <a href="articulo.html"><img src="images/MoonCenter.webp" style="display: block; margin: auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
+                <h2><span class="section-icon">📝</span>Artículos</h2>
+                <p class="section-subtitle">Análisis, reflexiones y cosas destacadas</p>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/sailor-moon-banner.webp" alt="Fanarts Destacados" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Nuevo</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">¡Envíame tus Fanarts!</div>
+                            <p class="card-description">Descubre información motivadora sobre cómo crear y compartir fanarts increíbles.</p>
+                            <a href="artículo8.html" class="card-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/Article7.jpg" alt="Géneros de Anime" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Recomendado</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">¿Conocías estos géneros de Anime?</div>
+                            <p class="card-description">Descubre los géneros menor conocidos del anime y sus características únicas que deberías explorar.</p>
+                            <a href="artículo7.html" class="card-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/RikaFurudeA.png" alt="Rika Furude" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Análisis</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">La eternidad no es bondad</div>
+                            <p class="card-description">Una reflexión profunda desde la mirada de Rika Furude. Exploramos los temas principales del personaje.</p>
+                            <a href="artículo6.html" class="card-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/AntiRain.jpg" alt="AntiRain" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Proyecto</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">AntiRain - Nuevo Proyecto</div>
+                            <p class="card-description">Conoce AntiRain, el nuevo proyecto de Moon Center. Innovación y creatividad combinadas.</p>
+                            <a href="articulo5.html" class="card-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="artículo 4.jpg" alt="Walterex" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Biografía</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Biografía de Walterex</div>
+                            <p class="card-description">Conoce más sobre el desarrollador de Moon Center, sus orígenes, historia y visión del proyecto.</p>
+                            <a href="articulo4.html" class="card-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="7382f266e07748fa8ad85ba71781266d.jpg" alt="Audiencia" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Reflexión</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">La Importancia de una Audiencia</div>
+                            <p class="card-description">Una reflexión sobre el desarrollo en conjunto y cómo la comunidad moldea los proyectos.</p>
+                            <a href="articulo3.html" class="card-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="9bbf0129918ba266075c98e4d0098531.jpg" alt="Curiosidades" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Fun Facts</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Curiosidades de Moon Center</div>
+                            <p class="card-description">Descubre datos fascinantes sobre la creación y desarrollo de la página Moon Center.</p>
+                            <a href="articulo2.html" class="card-link">Descubrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/MoonCenter.webp" alt="Roadmap" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Roadmap</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Proyectos Futuros</div>
+                            <p class="card-description">Conoce nuestro roadmap completo con los proyectos y características que pronto llegará a Moon Center.</p>
+                            <a href="articulo.html" class="card-link">Ver roadmap →</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="anime">
-                <h2 style="color: #FFD700;">Anime</h2>
-                <p class="titlep"><em>Información sobre tus Animes favoritos.</em></p><br>
-                <em><p>Aún no se ha publicado información...</p></em>
+
+        <!-- FANARTS -->
+            <section id="fanarts">
+                <h2><span class="section-icon">🎨</span>Fanarts</h2>
+                <p class="section-subtitle">Celebra la creatividad de la comunidad</p>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/sailor-moon-banner.webp" alt="Fanarts.webp">
+                            <div class="placeholder-image">🎨</div>
+                            <span class="card-badge">Comunidad</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Galería de Fanarts</div>
+                            <p class="card-description">Explora creaciones increíbles de la comunidad. Desde dibujos digitales hasta reinterpretaciones artísticas de tus personajes favoritos.</p>
+                            <a href="fanarts.html" class="card-link">Ver galería →</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+            
+            <!-- MANGAS -->
             <section id="mangas">
-                <h2 style="color: #FFD700;">Mangas</h2>
-                <p class="titlep"><em>Información sobre tus Mangas favoritos.</em></p><br>
-                <a href="mangas.html"><img src="images/OPPM.webp" alt="mangas" style="display: block; margin: 0 auto; width: 50%;" onmousedown="return false" draggable="false" oncontextmenu="return false"></a><br>
+                <h2><span class="section-icon">📚</span>Mangas</h2>
+                <p class="section-subtitle">Información sobre tus Mangas favoritos</p>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-image-wrapper">
+                            <img src="images/sailor-moon-image.webp" alt="Mangas Collection" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                            <span class="card-badge">Explorar</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Catálogo Completo de Mangas</div>
+                            <p class="card-description">Explora nuestra colección curada de mangas. Fichas detalladas, análisis y recomendaciones personalizadas.</p>
+                            <a href="mangas.html" class="card-link">Ver colección →</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <!-- ANIME -->
+            <section id="anime">
+                <h2><span class="section-icon">🎬</span>Anime</h2>
+                <p class="section-subtitle">Información sobre tus Animes favoritos</p>
+                
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🚀</div>
+                    <h3>¡Pronto llega!</h3>
+                    <p>Estamos preparando una sección completa de anime con información detallada de tus series favoritas. Vuelve pronto.</p>
+                </div>
+            </section>
+
+
+            
+
+            <!-- VIDEOJUEGOS -->
             <section id="juegos">
-                <h2 style="color: #FFD700;">Videojuegos</h2>
-                <p class="titlep"><em>Novedades y análisis sobre tus Videojuegos favoritos.</em></p><br>
-                <em><p>Aún no se ha publicado información...</p></em>
+                <h2><span class="section-icon">🎮</span>Videojuegos</h2>
+                <p class="section-subtitle">Novedades y análisis sobre tus Videojuegos favoritos</p>
+                
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🎯</div>
+                    <h3>¡Próximamente!</h3>
+                    <p>Estamos desarrollando una sección dedicada a videojuegos con análisis, reviews y noticias exclusivas.</p>
+                </div>
             </section>
         </main>
-        <br>
-        <em><a href="index.html" class="link-style" style="display: block; margin: 0 auto; text-decoration: none; text-align: center; width: 50%;">Volver al inicio</a></em>
-        <br>
+
+        <div class="back-button-wrapper">
+            <a href="index.html" class="back-button">← Volver al Inicio</a>
+        </div>
+
         <footer>
-            <p>&copy; 2024-2025 Moon Center, All rights reserved.</p>
+            <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
             <p>Developed by Walterex©</p>
         </footer>
+
         <script>
+            // Navegación suave
             document.querySelectorAll('nav a').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -94,6 +268,12 @@
                         behavior: 'smooth'
                     });
                 });
+            });
+
+            // Agregar tonos de animación a secciones
+            const sections = document.querySelectorAll('main section');
+            sections.forEach((section, index) => {
+                section.style.animationDelay = (index * 0.1) + 's';
             });
         </script>
     </body>

@@ -4,12 +4,104 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(31, 31, 31, 0.5) 0%, rgba(42, 42, 58, 0.5) 100%);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+.highlight {
+    color: #ffd700;
+}
+
+.mission {
+    color: aliceblue;
+    text-align: center;
+}
+
+.section-title {
+    color: #a19f9f;
+    font-weight: bold;
+}
+
+.privacy-title {
+    color: #a19f9f;
+    font-weight: bold;
+}
+
 h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: 1.5px solid #5a4fff;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, rgba(90, 79, 255, 0.3) 0%, rgba(90, 79, 255, 0.1) 100%);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.button-container a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(234, 255, 49, 0.4), transparent);
+    transition: left 0.4s ease;
+    z-index: 0;
+}
+
+.button-container a:hover::before {
+    left: 100%;
+}
+
+.button-container a:hover {
+    background: linear-gradient(135deg, #5a4fff 0%, #9c27b0 100%);
+    color: #eaff31;
+    border-color: #eaff31;
+    box-shadow: 0 0 20px rgba(90, 79, 255, 0.6), 0 0 40px rgba(234, 255, 49, 0.2);
+    transform: translateY(-3px);
 }
 
 .link-style {

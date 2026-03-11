@@ -1,135 +1,202 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        body {
-            background: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-        }
-        .link-style {
-            color: #f39c12;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .link-style:hover {
-            color: #9e6a15;
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 1rem 0;
-            border-top: 1px solid #333;
-        }
-        footer p {
-            margin: 0;
-            color: #757575;
-        }
-    </style>
+<html lang="es">
     <head>
         <link rel="icon" type="image" sizes="16x16" href="favicon-16x16.png">
         <link rel="icon2" type="image" sizes="32x32" href="favicon-32x32.png">
-        <title>Parche Moon Center</title>
+        <title>Parches - Moon Center</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <div class="logo">
-            <h1 style="color: #da9629;">Parches</h1>
-        </div>
+        <link rel="stylesheet" href="styles/patchnotes.css">
     </head>
     <body>
-        <img src="parche.jpg" style="display: block; margin: auto; max-width: 40%;" onmousedown="return false" draggable="false" oncontextmenu="return false">
-        <h2 align="center">Parche 1.3.3</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [22-12-2025]<br>
-            -Nuevo manga agregado.<br>
-            -Corrección de errores mínimos.<br>
-            -Perfil de Mastodon en el index.<br>
-            -Metadatos de Mastodon sobre articulos creados por Walterex y comunidad.
-        </p>
-        <h2 align="center">Parche 1.3.2</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [15-8-2025]<br>
-            -Nuevo manga agregado.<br>
-            -Correción ortográfica encontrados en varios artículos.<br>
-            -Corrección de errores mínimos.<br>
-            -Nuevo favicon en todas las secciones.<br>
-            -Nueva estética en todos los artículos.<br>
-            -¡Artículo 7 ya está disponible!
-        </p>
-        <h2 align="center">Parche 1.3.1</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [8-6-2025]<br>
-            -Nueva interfaz principal.<br>
-            -Correción ortográfica encontrados en varios artículos.<br>
-            -Corrección de errores mínimos.<br>
-            -Nueva división en la interfaz principal!<br>
-            -Iconos nuevos para artículos hechos por la comunidad.<br>
-            -Se han eliminado links innecesarios en el index principal.<br>
-            -Se eliminó la sección "Anime" de las Novedades temporalmente.<br>
-            -¡Optimización de animaciones!
-        </p>
-        <h2 align="center">Parche 1.3</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [20-4-2025]<br>
-            -Nuevas animaciones agregadas en la sección de "Novedades".<br>
-            -Se han cambiado algunas imágenes a webp para un mejor rendimiento de la página.<br>
-            -Corrección de errores mínimos.<br>
-            -Nuevo manga agregado.<br>
-            -Textos extra agregados en la sección "Novedades".<br>
-            -¡Artículo 6 ya disponible!
-        </p>
-        <h2 align="center">Parche 1.2.2</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [4-4-2025]<br>
-            -Nuevas animaciones agregadas a la página principal (beta).<br>
-            -Se han cambiado algunas imágenes a webp para un mejor rendimiento de la página.<br>
-            -Corrección de errores mínimos.<br>
-            -¡Nuevos links en la página principal agregados!
-        </p>
-        <h2 align="center">Parche 1.2.1</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [23-3-2025]<br>
-            -Nueva interfaz de imágenes para la sección "Novedades" (beta).<br>
-            -Mejora de renderizado en la sección "Novedades".<br>
-            -¡Artículo 5 ya disponible!
+        <header>
+            <h1>📋 Historial de Parches</h1>
+            <p class="header-subtitle">Seguimiento de versiones y actualizaciones de Moon Center</p>
+        </header>
 
-        </p>
-        <h2 align="center">Parche 1.2</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>
-            [20-2-2025]<br>
-            -Nueva interfaz de prueba para la sección "Novedades" (beta).<br>
-            -Sección de Mangas ya disponible (beta).<br>
-            -Corrección de ortografía en el artículo 3.<br>
-            -Corrección de error encontrado en la sección "Novedades".<br>
-            -Mejora de renderizado en la sección "Novedades".<br>
-            -Se ha disminuído la barra de desplazamiento en la sección de novedades por errores encontrados en el <em>Parche 1.1</em>.<br>
-            -Cambio de colores en los links principales.<br>
+        <main>
+            <img src="images/parche.jpg" alt="Parche Moon Center" class="hero-image" onmousedown="return false" draggable="false" oncontextmenu="return false">
             
-        </p>
-        <br>
-        <h2 align="center">Parche 1.1</h2>
-        <em><h3>Detalles del Parche:</h3></em>
-        <p>[31-1-2025]<br>
-            -Corrección de varios errores.<br>
-            -Mejoras de rendimiento para conexiones limitadas.<br>
-            -Nuevos textos en "Acerca de la página".<br> 
-            -Se han agregado Términos y Condiciones.<br>
-            -Se han agregado Políticas de Privacidad.<br>
-            -Nuevo artículo.<br>
-            -Favicon agregado a todas las secciones de la página.
-        </p>
-        <em><a href="MC.Search.html" class="link-style" style="display: block; margin: 0 auto; text-align: center;">Volver</a></em>
+            <section class="patches-intro">
+                <h2>Evolución del Proyecto</h2>
+                <p>Descubre todos los cambios, mejoras y actualizaciones que hemos realizado en Moon Center</p>
+            </section>
+
+            <section class="patches-container">
+                <!-- PARCHE 1.4 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.4</span>
+                            <span class="patch-date">11 de Marzo, 2026</span>
+                        </div>
+                        <h3 class="patch-title">Actualización Mayor</h3>
+                        <ul class="patch-details">
+                            <li>Estética principal completamente mejorada</li>
+                            <li>Correcciones visuales y mejoras gráficas</li>
+                            <li>Nuevos colores en cada aspecto de la página</li>
+                            <li>Ahora todos los artículos tienen una estética moderna</li>
+                            <li>Artículo 8 ya disponible</li>
+                            <li>Nueva sección de Fanarts disponible (beta)</li>
+                            <li>Nuevo manga agregado al catálogo</li>
+                            <li>Corrección de errores menores y ortográficos</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.3.3 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.3.3</span>
+                            <span class="patch-date">22 de Diciembre, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Nuevo Manga y Optimizaciones</h3>
+                        <ul class="patch-details">
+                            <li>Nuevo manga agregado al catálogo</li>
+                            <li>Corrección de errores mínimos</li>
+                            <li>Perfil de Mastodon integrado en el index</li>
+                            <li>Metadatos de Mastodon para artículos</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.3.2 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.3.2</span>
+                            <span class="patch-date">15 de Agosto, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Nueva Estética y Contenido</h3>
+                        <ul class="patch-details">
+                            <li>Nuevo manga agregado</li>
+                            <li>Correcciones ortográficas en artículos</li>
+                            <li>Favicon actualizado en todas las secciones</li>
+                            <li>Nueva estética unificada en todos los artículos</li>
+                            <li>Artículo 7 ya disponible</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.3.1 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.3.1</span>
+                            <span class="patch-date">8 de Junio, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Rediseño de Interfaz Principal</h3>
+                        <ul class="patch-details">
+                            <li>Nueva interfaz principal completamente rediseñada</li>
+                            <li>Correcciones ortográficas en artículos</li>
+                            <li>Nueva división en la interfaz principal</li>
+                            <li>Iconos nuevos para artículos de la comunidad</li>
+                            <li>Eliminación de links innecesarios</li>
+                            <li>Sección "Anime" temporalmente removida</li>
+                            <li>Optimización de animaciones</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.3 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.3</span>
+                            <span class="patch-date">20 de Abril, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Animaciones y Rendimiento</h3>
+                        <ul class="patch-details">
+                            <li>Nuevas animaciones en la sección de Novedades</li>
+                            <li>Imágenes convertidas a WebP para mejor rendimiento</li>
+                            <li>Correcciones de errores mínimos</li>
+                            <li>Nuevo manga agregado</li>
+                            <li>Textos adicionales en Novedades</li>
+                            <li>Artículo 6 disponible</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.2.2 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.2.2</span>
+                            <span class="patch-date">4 de Abril, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Animaciones Beta y Optimización</h3>
+                        <ul class="patch-details">
+                            <li>Nuevas animaciones en página principal (beta)</li>
+                            <li>Optimización de imágenes a WebP</li>
+                            <li>Correcciones de errores mínimos</li>
+                            <li>Nuevos links en página principal</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.2.1 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.2.1</span>
+                            <span class="patch-date">23 de Marzo, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Nueva Interfaz de Imágenes</h3>
+                        <ul class="patch-details">
+                            <li>Nueva interfaz de imágenes en Novedades (beta)</li>
+                            <li>Mejora de renderizado en Novedades</li>
+                            <li>Artículo 5 disponible</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.2 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.2</span>
+                            <span class="patch-date">20 de Febrero, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Sección de Mangas y Mejoras</h3>
+                        <ul class="patch-details">
+                            <li>Nueva interfaz de prueba para Novedades (beta)</li>
+                            <li>Sección de Mangas disponible (beta)</li>
+                            <li>Correcciones ortográficas en artículos</li>
+                            <li>Mejora de renderizado</li>
+                            <li>Cambio de colores en links principales</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PARCHE 1.1 -->
+                <article class="patch-card">
+                    <div class="patch-content">
+                        <div class="patch-header">
+                            <span class="patch-version">v1.1</span>
+                            <span class="patch-date">31 de Enero, 2025</span>
+                        </div>
+                        <h3 class="patch-title">Base Inicial de Moon Center</h3>
+                        <ul class="patch-details">
+                            <li>Corrección de varios errores</li>
+                            <li>Mejoras de rendimiento para conexiones limitadas</li>
+                            <li>Nuevos textos en "Acerca de la página"</li>
+                            <li>Términos y Condiciones agregados</li>
+                            <li>Políticas de Privacidad agregadas</li>
+                            <li>Primer artículo publicado</li>
+                            <li>Favicon agregado a todas las secciones</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <div class="back-button-wrapper">
+            <a href="MC.Search.html" class="back-button">← Volver a Novedades</a>
+        </div>
+
         <footer>
-            <p>&copy; 2024-2025 Moon Center, All rights reserved.</p>
+            <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
             <p>Developed by Walterex©</p>
         </footer>
     </body>

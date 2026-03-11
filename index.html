@@ -15,10 +15,22 @@
         <div class="button-container">
             <a href="MC.Search.html">Novedades</a>
             <a href="music.html">Soundtracks</a>
+            <a href="https://mpago.la/1Y2qxqh" class="donate-button">❤️ Apoya el Proyecto</a>
         </div>
     </header>
     <body>
         <div class="banner"></div>
+        
+        <!-- Sección Spotlight -->
+        <div id="spotlight" class="spotlight">
+            <div class="spotlight-content">
+                <span class="spotlight-badge" id="spotlight-badge">Destacado</span>
+                <h2 class="spotlight-title" id="spotlight-title">Cargando...</h2>
+                <p class="spotlight-description" id="spotlight-description">Descubre el contenido más importante de esta semana</p>
+                <a href="#" class="spotlight-cta" id="spotlight-link">Ver más</a>
+            </div>
+        </div>
+        
         <img src="images/MoonCenter.webp" alt="Moon Center.png" width="35%" style="display: block; margin: auto" onmousedown="return false" draggable="false" oncontextmenu="return false">
         <p><em style="color: #FFD700;">Moon Center</em> es una página web diseñada para los fanáticos del anime, manga y videojuegos, ofreciendo información confiable, actualizaciones y análisis en profundidad sobre estas temáticas.
             El proyecto buscará destacar por su precisión, organización y diseño visual atractivo que priorice la experiencia del usuario.
@@ -44,50 +56,81 @@
         </h3>
         <br>
         <section id="contactos">
-            <h3 style="color:azure; display: block; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contactos: </h3>
-            <em><a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X" class="link-style">¡El Rincón de Aki!</a></em>
-            <br>
-            <em><a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página." class="link-style">Correo Electrónico</a></em>
-            <br>
-            <em><a href="https://www.youtube.com/@Walter_ex" class="link-style">Walterex Channel</a></em>
-            <br>
-            <em><a href="https://github.com/Arkestralex" class="link-style">Github profile</a></em>
-            <br>
-            <em><a href="https://mastodon.social/@wawawallllldo" class="link-style">Mastodon profile</a></em>
+            <h3>Contactos:</h3>
+            <div class="button-container">
+                <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X">¡El Rincón de Aki!</a>
+                <a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página.">Correo Electrónico</a>
+                <a href="https://www.youtube.com/@WalldoTechLabs">Walterex Channel</a>
+                <a href="https://github.com/Arkestralex">Github profile</a>
+                <a href="https://mastodon.social/@wawawallllldo">Mastodon profile</a>
+            </div>
         </section>
         <br>
         <br>
-        <em><a href="Acerca de.html" class="link-style">Acerca de la página</a></em>
+        <em><div class="button-container"><a href="Acerca de.html">Acerca de la página</a></div></em>
         <br>
         <br>
         <footer>
-            <p>&copy; 2024-2025 Moon Center, All rights reserved.</p>
+            <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
             <p>Developed by Walterex©</p>
-            <a rel="me" href="https://mastodon.social/@wawawallllldo">Mastodon</a>
+            <div class="footer-contacts">
+                <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X">¡El Rincón de Aki!</a>
+                <a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página.">Correo Electrónico</a>
+                <a href="https://www.youtube.com/@WalldoTechLabs">Walterex Channel</a>
+                <a href="https://github.com/Arkestralex">Github profile</a>
+                <a rel="me" href="https://mastodon.social/@wawawallllldo">Mastodon</a>
+            </div>
         </footer>
     </body>
     <script>
+        // Datos de Spotlight
+        const spotlightData = {
+            badge: "Destacado de la semana",
+            title: "¡Nueva Sección de Mangas!",
+            description: "Explora nuestra colección curada de mangas populares y descubre historias cautivadoras de autores reconocidos. Incluye análisis detallados y recomendaciones personalizadas.",
+            image: "images/sailor-moon-image.webp",
+            link: "mangas.html"
+        };
+
+        // Configurar Spotlight
+        function setupSpotlight() {
+            const spotlight = document.getElementById('spotlight');
+            const badge = document.getElementById('spotlight-badge');
+            const title = document.getElementById('spotlight-title');
+            const description = document.getElementById('spotlight-description');
+            const link = document.getElementById('spotlight-link');
+
+            spotlight.style.backgroundImage = `url('${spotlightData.image}')`;
+            badge.textContent = spotlightData.badge;
+            title.textContent = spotlightData.title;
+            description.textContent = spotlightData.description;
+            link.href = spotlightData.link;
+        }
+
+        setupSpotlight();
+
+        // Datos de Noticias
         const releases = [
         {
             type: "Noticia1",
             title: "¡Sección de Mangas!", 
-            image: "images/OPPM.webp",
+            image: "images/sailor-moon-image.webp",
             description: "¡Descubre la nueva sección de Mangas!",
             link: "mangas.html"
         },
         {
             type: "Noticia2",
             title: "Nueva actualización",
-            image: "parche.jpg",
+            image: "images/parche.jpg",
             description: "¡Lee los detalles de la nueva actualización!",
             link: "newparch.html"
         },
         {
             type: "Noticia3",
-            title: "Conocías estos géneros en el Anime?",
-            image: "images/Article7.jpg",
-            description: "¡El artículo 7 ya está disponible!",
-            link: "artículo7.html"
+            title: "Ya viste el nuevo artículo? Trae cosas fascinantes con una nueva sección!",
+            image: "images/sailor-moon-banner.webp",
+            description: "¡El artículo 8 ya está disponible!",
+            link: "artículo8.html"
         }
         ];
 
@@ -100,7 +143,7 @@
         <img src="${release.image}" alt="Portada de ${release.type}" onmousedown="return false" draggable="false" oncontextmenu="return false">
         <h3>${release.title}</h3>
         <em><p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">${release.description}</p></em>
-        <em><a href="${release.link}" class="link-style" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></em>
+        <div class="button-container"><a href="${release.link}" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></div>
         `;
         releaseContainer.appendChild(card);
         });

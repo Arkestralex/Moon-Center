@@ -3,6 +3,98 @@ body {
     color: #e0e0e0;
     font-family: Arial, sans-serif;
 }
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    color: #eaff31;
+    font-size: 2.5em;
+    text-shadow: 0 0 15px rgba(234, 255, 49, 0.5);
+    margin: 0;
+}
+
+.cover {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.label {
+    color: #00b4d8;
+}
+
+.back-link {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back-link:hover {
+    color: #9e6a15;
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: 1.5px solid #5a4fff;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, rgba(90, 79, 255, 0.3) 0%, rgba(90, 79, 255, 0.1) 100%);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.button-container a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(234, 255, 49, 0.4), transparent);
+    transition: left 0.4s ease;
+    z-index: 0;
+}
+
+.button-container a:hover::before {
+    left: 100%;
+}
+
+.button-container a:hover {
+    background: linear-gradient(135deg, #5a4fff 0%, #9c27b0 100%);
+    color: #eaff31;
+    border-color: #eaff31;
+    box-shadow: 0 0 20px rgba(90, 79, 255, 0.6), 0 0 40px rgba(234, 255, 49, 0.2);
+    transform: translateY(-3px);
+}
+
 .link-style {
     color: #f39c12;
     text-decoration: none;
@@ -25,26 +117,69 @@ footer p {
     color: #757575;
 }
 .album-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
 }
 .album-item {
     display: flex;
     align-items: center;
-    background-color: #1e1e1e;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a3a 100%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.album-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(90, 79, 255, 0.3);
 }
 .album-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    margin-right: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 15px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.album-item:hover .album-img {
+    transform: scale(1.05);
 }
 .album-name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    color: #eaff31;
+    transition: color 0.3s ease;
+}
+.album-item:hover .album-name {
+    color: #5a4fff;
+}
+
+.donate-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    border-radius: 10px;
+}
+
+.donate-section p {
+    margin: 0;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.donate-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.donate-link:hover {
+    color: #ff4757;
+    text-decoration: underline;
 }

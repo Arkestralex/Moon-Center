@@ -1,42 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-    <style>
-        body {
-            background: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-        }
-        footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 1rem 0;
-            border-top: 1px solid #333;
-        }
-        footer p {
-            margin: 0;
-            color: #757575;
-        }
-        header {
-            background-color: #1f1f1f;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #333;
-        }
-        header .logo h1{
-            margin: 0;
-            color: #e0e0e0;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            width: 500px;
-        }
-        h3 {
-            color: rgb(129, 82, 21);
-        }     
-    </style>
     <head>
         <link rel="icon" type="image" sizes="16x16" href="favicon-16x16.png">
         <link rel="icon2" type="image" sizes="32x32" href="favicon-32x32.png">
@@ -44,8 +7,10 @@
         <meta name="fediverse:creator" content="@wawawallllldo@mastodon.social">
         <meta charset="UTF-8">
         <title>Curiosidades de Moon Center</title>
+        <link rel="stylesheet" href="styles/article.css">
     </head>
     <body>
+        <div class="container">
         <div class="logo">
             <h1>Artículo 2</h1>
         </div>
@@ -118,12 +83,19 @@
         </em></h3>
         <br>
         <h3 align="center">¿Qué te pareció este artículo?</h3>
-        <a href="MC.Search.html" style="display: block; margin: 0 auto; text-decoration: none; text-align: center;">Volver</a>
+        <div class="back-button-wrapper">
+            <a href="MC.Search.html" class="back-button">← Volver</a>
+        </div>
         <br>
-        <img src="93b5f221d4f68262cc8a3fea0c3b39c1.gif" alt="Moon Center.png" style="display: block; margin: 0 auto; width: 35%; border-radius: 10%;" onmousedown="return false" draggable="false" oncontextmenu="return false">
+        <div class="donate-section">
+            <p>¿Te gustó este artículo? ❤️ <a href="https://mpago.la/1Y2qxqh" class="donate-link">Apoya Moon Center</a> para más contenido como este.</p>
+        </div>
         <br>
+        <img src="93b5f221d4f68262cc8a3fea0c3b39c1.gif" alt="Moon Center.png" class="hero-image" onmousedown="return false" draggable="false" oncontextmenu="return false">
+        <br>
+        </div>
         <footer>
-            <p>&copy; 2024-2025 Moon Center, All rights reserved.</p>
+            <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
             <p>Developed by Walterex©</p>
         </footer>
     </body>
