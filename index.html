@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Center</title>
-    <head>
-        <link rel="icon" type="image" sizes="16x16" href="favicon-16x16.png">
-        <link rel="icon2" type="image" sizes="32x32" href="favicon-32x32.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
         <div class="logo">
             <h1>Moon Center</h1>
         </div>
-    </head>
-    <header>
-        <div class="button-container">
-            <a href="MC.Search.html">Novedades</a>
-            <a href="music.html">Soundtracks</a>
-            <a href="https://mpago.la/1Y2qxqh" class="donate-button">❤️ Apoya el Proyecto</a>
-        </div>
+        <nav aria-label="Menú principal">
+            <div class="button-container">
+                <a href="MC.Search.html">Novedades</a>
+                <a href="music.html">Soundtracks</a>
+                <a href="https://mpago.la/1Y2qxqh" class="donate-button">❤️ Apoya el Proyecto</a>
+            </div>
+        </nav>
     </header>
-    <body>
-        <div class="banner"></div>
-        
-        <!-- Sección Spotlight -->
-        <div id="spotlight" class="spotlight">
+
+    <main>
+        <div class="banner" role="img" aria-label="Banner animado de Moon Center"></div>
+
+        <section id="spotlight" class="spotlight" aria-labelledby="spotlight-title">
             <div class="spotlight-content">
                 <span class="spotlight-badge" id="spotlight-badge">Destacado</span>
                 <h2 class="spotlight-title" id="spotlight-title">Cargando...</h2>
                 <p class="spotlight-description" id="spotlight-description">Descubre el contenido más importante de esta semana</p>
                 <a href="#" class="spotlight-cta" id="spotlight-link">Ver más</a>
             </div>
-        </div>
-        
-        <img src="images/MoonCenter.webp" alt="Moon Center.png" width="35%" style="display: block; margin: auto" onmousedown="return false" draggable="false" oncontextmenu="return false">
-        <p><em style="color: #FFD700;">Moon Center</em> es una página web diseñada para los fanáticos del anime, manga y videojuegos, ofreciendo información confiable, actualizaciones y análisis en profundidad sobre estas temáticas.
-            El proyecto buscará destacar por su precisión, organización y diseño visual atractivo que priorice la experiencia del usuario.
-            <br>
-            La misión de <em style="color: #FFD700;">Moon Center</em> será conectar la comunidad otaku y gamer con contenido detallado y bien investigado, abarcando desde lanzamientos recientes hasta clásicos. La página podría incluir secciones como noticias, reseñas, guías, y un espacio dedicado a recomendaciones, buscando convertirse en un recurso esencial para los aficionados.
-        </p>
-        <section id="latest-releases" class="latest-releases" >
-            <em><h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #f39c12;">Últimas noticias</h2></em>
+        </section>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <figure>
+                <img src="images/MoonCenter.webp" alt="Logotipo de Moon Center" width="35%" style="display: block; margin: auto" onmousedown="return false" draggable="false" oncontextmenu="return false">
+            </figure>
+            <article>
+                <p><em style="color: #FFD700;">Moon Center</em> es una página web diseñada para los fanáticos del anime, manga y videojuegos, ofreciendo información confiable, actualizaciones y análisis en profundidad sobre estas temáticas. El proyecto buscará destacar por su precisión, organización y diseño visual atractivo que priorice la experiencia del usuario.<br>La misión de <em style="color: #FFD700;">Moon Center</em> será conectar la comunidad otaku y gamer con contenido detallado y bien investigado, abarcando desde lanzamientos recientes hasta clásicos. La página podría incluir secciones como noticias, reseñas, guías, y un espacio dedicado a recomendaciones, buscando convertirse en un recurso esencial para los aficionados.</p>
+            </article>
+        </section>
+
+        <section id="latest-releases" class="latest-releases" aria-labelledby="latest-releases-title">
+            <h2 id="latest-releases-title" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #f39c12;">Últimas noticias</h2>
             <div class="release-container" id="release-container"></div>
         </section>
-        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bienvenido a Moon Center</h1>
-        <h3>
-            Tu espacio dedicado a este mundo. Aquí encontrarás información cuidadosamente organizada sobre tus franquicias favoritas, incluyendo reseñas, análisis, datos curiosos y las últimas novedades de la industria.
-            <br>
-            <br>
-            <img class="icono-personal" src="images/IconW.webp" alt="Walterex Icon" onmousedown="return false" draggable="false" oncontextmenu="return false">
-            <em style="color: #FFD700;">En este sitio nos esforzamos para ofrecerte:</em>
-            <br>
-            •Fichas detalladas de personajes, series y juegos.<br>
-            •Noticias actualizadas sobre lanzamientos, eventos y tendencias.<br>
-            •Artículos reflexivos que exploran temas profundos detrás de las historias.<br>
-            •Un diseño intuitivo y cómodo, pensado para que disfrutes cada visita.<br>
-        </h3>
-        <br>
-        <section id="contactos">
-            <h3>Contactos:</h3>
+
+        <section class="welcome" aria-labelledby="welcome-title">
+            <h2 id="welcome-title" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bienvenido a Moon Center</h2>
+            <p>Tu espacio dedicado a este mundo. Aquí encontrarás información cuidadosamente organizada sobre tus franquicias favoritas, incluyendo reseñas, análisis, datos curiosos y las últimas novedades de la industria.</p>
+            <p>
+                <img class="icono-personal" src="images/IconW.webp" alt="Icono personal de Walterex" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                <em style="color: #FFD700;">En este sitio nos esforzamos para ofrecerte:</em><br>
+                • Fichas detalladas de personajes, series y juegos.<br>
+                • Noticias actualizadas sobre lanzamientos, eventos y tendencias.<br>
+                • Artículos reflexivos que exploran temas profundos detrás de las historias.<br>
+                • Un diseño intuitivo y cómodo, pensado para que disfrutes cada visita.<br>
+            </p>
+        </section>
+
+        <section id="contactos" aria-labelledby="contactos-title">
+            <h2 id="contactos-title">Contactos</h2>
             <div class="button-container">
                 <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X">¡El Rincón de Aki!</a>
                 <a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página.">Correo Electrónico</a>
-                <a href="https://www.youtube.com/@WalldoTechLabs">Walterex Channel</a>
+                <a href="https://www.youtube.com/@wawawallllldo">Walterex Channel</a>
                 <a href="https://github.com/Arkestralex">Github profile</a>
-                <a href="https://mastodon.social/@wawawallllldo">Mastodon profile</a>
+                <a href="https://rebel.ar/@wawawallllldo">Mastodon profile</a>
             </div>
         </section>
-        <br>
-        <br>
-        <em><div class="button-container"><a href="Acerca de.html">Acerca de la página</a></div></em>
-        <br>
-        <br>
-        <footer>
-            <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
-            <p>Developed by Walterex©</p>
-            <div class="footer-contacts">
-                <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X">¡El Rincón de Aki!</a>
-                <a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página.">Correo Electrónico</a>
-                <a href="https://www.youtube.com/@WalldoTechLabs">Walterex Channel</a>
-                <a href="https://github.com/Arkestralex">Github profile</a>
-                <a rel="me" href="https://mastodon.social/@wawawallllldo">Mastodon</a>
-            </div>
-        </footer>
-    </body>
+
+        <div class="button-container">
+            <a href="Acerca de.html">Acerca de la página</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-2026 Moon Center, All rights reserved.</p>
+        <p>Developed by Walterex©</p>
+        <div class="footer-contacts">
+            <a href="https://whatsapp.com/channel/0029Vb0b8uMElaglLrkKP80X">¡El Rincón de Aki!</a>
+            <a href="mailto:projectmooncenter@gmail.com?subject=Pregunta%20sobre%20la%20página.">Correo Electrónico</a>
+            <a href="https://www.youtube.com/@wawawallllldo">Walterex Channel</a>
+            <a href="https://github.com/Arkestralex">Github profile</a>
+            <a rel="me" href="https://rebel.ar/@wawawallllldo">Mastodon</a>
+        </div>
+    </footer>
+
     <script>
         // Datos de Spotlight
         const spotlightData = {
@@ -111,42 +118,42 @@
 
         // Datos de Noticias
         const releases = [
-        {
-            type: "Noticia1",
-            title: "¡Sección de Mangas!", 
-            image: "images/neon-genesis-evangelion.webp",
-            description: "¡Descubre la nueva sección de Mangas!",
-            link: "mangas.html"
-        },
-        {
-            type: "Noticia2",
-            title: "Nueva actualización",
-            image: "images/parche.jpg",
-            description: "¡Lee los detalles de la nueva actualización!",
-            link: "newparch.html"
-        },
-        {
-            type: "Noticia3",
-            title: "Ya viste el nuevo artículo? Trae cosas fascinantes con una nueva sección!",
-            image: "images/sailor-moon-banner.webp",
-            description: "¡El artículo 8 ya está disponible! Leer ahora en Novedades.",
-            link: "artículo8.html"
-        }
+            {
+                type: "Noticia1",
+                title: "¡Sección de Mangas!",
+                image: "images/neon-genesis-evangelion.webp",
+                description: "¡Descubre la nueva sección de Mangas!",
+                link: "mangas.html"
+            },
+            {
+                type: "Noticia2",
+                title: "Nueva actualización",
+                image: "images/parche.jpg",
+                description: "¡Lee los detalles de la nueva actualización!",
+                link: "WhatsNew.html"
+            },
+            {
+                type: "Noticia3",
+                title: "Ya viste el nuevo artículo? Desde curiosidades hasta un impacto increíble!",
+                image: "images/articulo9.png",
+                description: "¡El artículo 9 ya está disponible! Leer ahora en Novedades.",
+                link: "artículo9.html"
+            }
         ];
 
         const releaseContainer = document.getElementById("release-container");
 
         releases.forEach(release => {
-        const card = document.createElement("div");
-        card.classList.add("release-card");
-        card.innerHTML = `
-        <img src="${release.image}" alt="Portada de ${release.type}" onmousedown="return false" draggable="false" oncontextmenu="return false">
-        <h3>${release.title}</h3>
-        <em><p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">${release.description}</p></em>
-        <div class="button-container"><a href="${release.link}" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></div>
-        `;
-        releaseContainer.appendChild(card);
+            const card = document.createElement("article");
+            card.classList.add("release-card");
+            card.innerHTML = `
+                <img src="${release.image}" alt="Portada de ${release.type}" onmousedown="return false" draggable="false" oncontextmenu="return false">
+                <h3>${release.title}</h3>
+                <em><p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">${release.description}</p></em>
+                <div class="button-container"><a href="${release.link}" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ver más</a></div>
+            `;
+            releaseContainer.appendChild(card);
         });
     </script>
-
+</body>
 </html>
